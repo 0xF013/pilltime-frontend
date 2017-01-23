@@ -1,6 +1,6 @@
 import reducer, {
   LOADING, SUCCESS, initialState,
-  loadAll
+  loadAll, create
 } from './alarms';
 
 describe('alarms feature', () => {
@@ -55,6 +55,37 @@ describe('alarms feature', () => {
       it('returns the items', async () => {
         const result = await loadAll()(dispatch, undefined, { alarmService });
         expect(result).toBe(items);
+      });
+    });
+
+    describe('create()', () => {
+      let dispatch, items, alarmService;
+
+      beforeEach(() => {
+        dispatch = jest.fn();
+        items = ['some items'];
+        alarmService = {
+          loadAll: jest.fn(() => items),
+          create: jest.fn()
+        };
+      });
+
+      it('dispatches LOADING', () => {
+        create()(dispatch, undefined, { alarmService });
+        expect(dispatch).toHaveBeenCalledWith({ type: LOADING });
+      });
+
+      it('calls create on the alarms service with the provided payload', async () => {
+        const payload = { some: 'payload' };
+        await create(payload)(dispatch, undefined, { alarmService });
+        expect(alarmService.create).toHaveBeenCalledWith(payload);
+      });
+
+      it('dispatches a reload of all items', async () => {
+        const payload = { some: 'payload' };
+        const refresh = jest.fn();
+        await create(payload)(dispatch, undefined, { alarmService, refresh });
+        expect(refresh).toHaveBeenCalled();
       });
     });
   });

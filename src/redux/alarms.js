@@ -34,9 +34,10 @@ export function loadAll() {
 }
 
 export function create(payload) {
-  return async (dispatch, getState, { alarmService }) => {
+  const _loadAll = loadAll;
+  return async (dispatch, getState, { alarmService, refresh=loadAll }) => {
     dispatch({ type: LOADING });
     await alarmService.create(payload);
-    return dispatch(loadAll());
+    return dispatch(refresh());
   };
 }

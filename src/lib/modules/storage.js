@@ -9,6 +9,6 @@ export default (localStorage) => ({
 
   async set(name, item) {
     const stringToStore = JSON.stringify(item);
-    localStorage.set(name, stringToStore);
+    localStorage.setItem(name, stringToStore);
   }
 });

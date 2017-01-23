@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
+import { reducer as formReducer } from 'redux-form'
 import thunk from 'redux-thunk';
 import App from './components/App';
 import Alarms from './components/Alarms/';
@@ -17,7 +18,10 @@ const composeEnhancers =
     }) : compose;
 
 let store = createStore(
-  combineReducers(reducers),
+  combineReducers({
+    ...reducers,
+    form: formReducer
+  }),
   composeEnhancers(
     applyMiddleware(thunk.withExtraArgument(dependencies)),
   )
