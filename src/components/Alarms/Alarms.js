@@ -11,7 +11,6 @@ export class Alarms extends Component {
 
   render() {
     const { items } = this.props;
-    console.log(items);
     return (
       <div>
         <h2>Create alarm</h2>
