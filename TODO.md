@@ -1,5 +1,0 @@
-- Alarm component
-- component test
-- delete
-- edit
-- styling
