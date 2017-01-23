@@ -16,7 +16,7 @@ export class Alarms extends Component {
         <h2>Create alarm</h2>
         <AlarmCreateForm />
         <h2>Alarms</h2>
-        { items.map(alarm => <div>Take {alarm.dosage} of {alarm.pillName} at {alarm.ingestionTime}</div>)}
+        { items.map(alarm => <div key={alarm.id}>Take {alarm.dosage} of {alarm.pillName} at {alarm.ingestionTime}</div>)}
       </div>
     );
   }
