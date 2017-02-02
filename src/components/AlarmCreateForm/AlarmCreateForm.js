@@ -13,6 +13,7 @@ export class AlarmCreateForm extends Component {
     const { handleSubmit } = this.props;
     return (
       <form onSubmit={handleSubmit(this.onSubmit)}>
+        <h2>Create alarm</h2>
         <div>
           <label htmlFor="ingestionTime">Ingestion time:</label>
           <br />

@@ -12,4 +12,11 @@ describe('<Alarms />', () => {
     const wrapper = shallow(<Alarms items={ items } />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('dispatches loadAll on mount', () => {
+    const loadAll = jest.fn();
+    const wrapper = shallow(<Alarms items={ [] } loadAll={ loadAll } />);
+    wrapper.instance().componentDidMount();
+    expect(loadAll).toHaveBeenCalled();
+  });
 });

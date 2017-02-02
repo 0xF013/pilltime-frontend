@@ -6,61 +6,77 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <div>
+  "node": <Grid>
     <h2>
         Create alarm
     </h2>
-    <Connect(ReduxForm) />
-    <h2>
-        Alarms
-    </h2>
-    <Alarm
-        alarm={
-            Object {
-                "some": "item1",
-              }
-        } />
-    <Alarm
-        alarm={
-            Object {
-                "some": "item2",
-              }
-        } />
-    <Alarm
-        alarm={
-            Object {
-                "some": "item3",
-              }
-        } />
-</div>,
+    <Row>
+        <Col
+            md={6}>
+            <h2>
+                Alarms
+            </h2>
+            <Alarm
+                alarm={
+                    Object {
+                        "some": "item1",
+                      }
+                } />
+            <Alarm
+                alarm={
+                    Object {
+                        "some": "item2",
+                      }
+                } />
+            <Alarm
+                alarm={
+                    Object {
+                        "some": "item3",
+                      }
+                } />
+        </Col>
+        <Col
+            md={6}>
+            <Connect(ReduxForm) />
+        </Col>
+    </Row>
+</Grid>,
   "nodes": Array [
-    <div>
+    <Grid>
       <h2>
             Create alarm
       </h2>
-      <Connect(ReduxForm) />
-      <h2>
-            Alarms
-      </h2>
-      <Alarm
-            alarm={
-                  Object {
-                        "some": "item1",
-                      }
-            } />
-      <Alarm
-            alarm={
-                  Object {
-                        "some": "item2",
-                      }
-            } />
-      <Alarm
-            alarm={
-                  Object {
-                        "some": "item3",
-                      }
-            } />
-</div>,
+      <Row>
+            <Col
+                  md={6}>
+                  <h2>
+                        Alarms
+                  </h2>
+                  <Alarm
+                        alarm={
+                              Object {
+                                    "some": "item1",
+                                  }
+                        } />
+                  <Alarm
+                        alarm={
+                              Object {
+                                    "some": "item2",
+                                  }
+                        } />
+                  <Alarm
+                        alarm={
+                              Object {
+                                    "some": "item3",
+                                  }
+                        } />
+            </Col>
+            <Col
+                  md={6}>
+                  <Connect(ReduxForm) />
+            </Col>
+      </Row>
+</Grid>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -121,63 +137,79 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div>
+        "_currentElement": <Grid>
           <h2>
                     Create alarm
           </h2>
-          <Connect(ReduxForm) />
-          <h2>
-                    Alarms
-          </h2>
-          <Alarm
-                    alarm={
-                              Object {
-                                        "some": "item1",
-                                      }
-                    } />
-          <Alarm
-                    alarm={
-                              Object {
-                                        "some": "item2",
-                                      }
-                    } />
-          <Alarm
-                    alarm={
-                              Object {
-                                        "some": "item3",
-                                      }
-                    } />
-</div>,
+          <Row>
+                    <Col
+                              md={6}>
+                              <h2>
+                                        Alarms
+                              </h2>
+                              <Alarm
+                                        alarm={
+                                                  Object {
+                                                            "some": "item1",
+                                                          }
+                                        } />
+                              <Alarm
+                                        alarm={
+                                                  Object {
+                                                            "some": "item2",
+                                                          }
+                                        } />
+                              <Alarm
+                                        alarm={
+                                                  Object {
+                                                            "some": "item3",
+                                                          }
+                                        } />
+                    </Col>
+                    <Col
+                              md={6}>
+                              <Connect(ReduxForm) />
+                    </Col>
+          </Row>
+</Grid>,
         "_debugID": 2,
-        "_renderedOutput": <div>
+        "_renderedOutput": <Grid>
           <h2>
                     Create alarm
           </h2>
-          <Connect(ReduxForm) />
-          <h2>
-                    Alarms
-          </h2>
-          <Alarm
-                    alarm={
-                              Object {
-                                        "some": "item1",
-                                      }
-                    } />
-          <Alarm
-                    alarm={
-                              Object {
-                                        "some": "item2",
-                                      }
-                    } />
-          <Alarm
-                    alarm={
-                              Object {
-                                        "some": "item3",
-                                      }
-                    } />
-</div>,
+          <Row>
+                    <Col
+                              md={6}>
+                              <h2>
+                                        Alarms
+                              </h2>
+                              <Alarm
+                                        alarm={
+                                                  Object {
+                                                            "some": "item1",
+                                                          }
+                                        } />
+                              <Alarm
+                                        alarm={
+                                                  Object {
+                                                            "some": "item2",
+                                                          }
+                                        } />
+                              <Alarm
+                                        alarm={
+                                                  Object {
+                                                            "some": "item3",
+                                                          }
+                                        } />
+                    </Col>
+                    <Col
+                              md={6}>
+                              <Connect(ReduxForm) />
+                    </Col>
+          </Row>
+</Grid>,
       },
-      "_renderedNodeType": 0,
+      "_renderedNodeType": 1,
       "_rootNodeID": 0,
       "_topLevelWrapper": null,
       "_updateBatchNumber": null,
