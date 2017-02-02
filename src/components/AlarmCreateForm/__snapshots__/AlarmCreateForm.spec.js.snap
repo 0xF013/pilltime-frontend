@@ -1,0 +1,236 @@
+exports[`<AlarmCreateForm /> matches the snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <form
+    onSubmit={undefined}>
+    <div>
+        <label
+            htmlFor="ingestionTime">
+            Ingestion time:
+        </label>
+        <br />
+        <Field
+            component="input"
+            name="ingestionTime"
+            placeholder="10:30"
+            type="text" />
+    </div>
+    <div>
+        <label
+            htmlFor="pillName">
+            Pill name:
+        </label>
+        <br />
+        <Field
+            component="input"
+            name="pillName"
+            placeholder="Alprazolam"
+            type="text" />
+    </div>
+    <div>
+        <label
+            htmlFor="dosage">
+            Dosage:
+        </label>
+        <br />
+        <Field
+            component="input"
+            name="dosage"
+            placeholder="0.5mg"
+            type="text" />
+    </div>
+    <button
+        type="submit">
+        Submit
+    </button>
+</form>,
+  "nodes": Array [
+    <form
+      onSubmit={undefined}>
+      <div>
+            <label
+                  htmlFor="ingestionTime">
+                  Ingestion time:
+            </label>
+            <br />
+            <Field
+                  component="input"
+                  name="ingestionTime"
+                  placeholder="10:30"
+                  type="text" />
+      </div>
+      <div>
+            <label
+                  htmlFor="pillName">
+                  Pill name:
+            </label>
+            <br />
+            <Field
+                  component="input"
+                  name="pillName"
+                  placeholder="Alprazolam"
+                  type="text" />
+      </div>
+      <div>
+            <label
+                  htmlFor="dosage">
+                  Dosage:
+            </label>
+            <br />
+            <Field
+                  component="input"
+                  name="dosage"
+                  placeholder="0.5mg"
+                  type="text" />
+      </div>
+      <button
+            type="submit">
+            Submit
+      </button>
+</form>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <AlarmCreateForm
+        handleSubmit={[Function]} />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": AlarmCreateForm {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "onSubmit": [Function],
+        "props": Object {
+          "handleSubmit": [Function],
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <form
+          onSubmit={undefined}>
+          <div>
+                    <label
+                              htmlFor="ingestionTime">
+                              Ingestion time:
+                    </label>
+                    <br />
+                    <Field
+                              component="input"
+                              name="ingestionTime"
+                              placeholder="10:30"
+                              type="text" />
+          </div>
+          <div>
+                    <label
+                              htmlFor="pillName">
+                              Pill name:
+                    </label>
+                    <br />
+                    <Field
+                              component="input"
+                              name="pillName"
+                              placeholder="Alprazolam"
+                              type="text" />
+          </div>
+          <div>
+                    <label
+                              htmlFor="dosage">
+                              Dosage:
+                    </label>
+                    <br />
+                    <Field
+                              component="input"
+                              name="dosage"
+                              placeholder="0.5mg"
+                              type="text" />
+          </div>
+          <button
+                    type="submit">
+                    Submit
+          </button>
+</form>,
+        "_debugID": 2,
+        "_renderedOutput": <form
+          onSubmit={undefined}>
+          <div>
+                    <label
+                              htmlFor="ingestionTime">
+                              Ingestion time:
+                    </label>
+                    <br />
+                    <Field
+                              component="input"
+                              name="ingestionTime"
+                              placeholder="10:30"
+                              type="text" />
+          </div>
+          <div>
+                    <label
+                              htmlFor="pillName">
+                              Pill name:
+                    </label>
+                    <br />
+                    <Field
+                              component="input"
+                              name="pillName"
+                              placeholder="Alprazolam"
+                              type="text" />
+          </div>
+          <div>
+                    <label
+                              htmlFor="dosage">
+                              Dosage:
+                    </label>
+                    <br />
+                    <Field
+                              component="input"
+                              name="dosage"
+                              placeholder="0.5mg"
+                              type="text" />
+          </div>
+          <button
+                    type="submit">
+                    Submit
+          </button>
+</form>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <AlarmCreateForm
+    handleSubmit={[Function]} />,
+}
+`;

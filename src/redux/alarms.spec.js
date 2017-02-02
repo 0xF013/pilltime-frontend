@@ -42,6 +42,7 @@ describe('alarms feature', () => {
         items = ['some items'];
         alarmService = { loadAll: jest.fn(() => items) };
       });
+      
       it('dipatches LOADING', async () => {
         loadAll()(dispatch, undefined, { alarmService });
         expect(dispatch).toHaveBeenCalledWith({ type: LOADING });

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { create } from '../../redux/alarms';
+import { connect } from 'react-redux';
 
 export class AlarmCreateForm extends Component {
 
   onSubmit = async (data) => {
-    await this.props.dispatch(create(data));
+    await this.props.create(data);
   };
 
   render() {
@@ -33,4 +34,5 @@ export class AlarmCreateForm extends Component {
   }
 }
 
-export default reduxForm({ form: 'alarmCreateForm'})(AlarmCreateForm);
+const DecoratedWithForm = reduxForm({ form: 'alarmCreateForm'})(AlarmCreateForm);
+export default connect(undefined, { create })(DecoratedWithForm);

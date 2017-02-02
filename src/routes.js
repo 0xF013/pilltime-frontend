@@ -5,7 +5,7 @@ import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import { reducer as formReducer } from 'redux-form'
 import thunk from 'redux-thunk';
 import App from './components/App';
-import Alarms from './components/Alarms/';
+import Alarms from './components/Alarms';
 import reducers from './redux';
 import dependencies from './dependencies';
 

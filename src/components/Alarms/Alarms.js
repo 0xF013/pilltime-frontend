@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import Alarm from './Alarm';
+import Alarm from '../Alarm';
 import AlarmCreateForm from '../AlarmCreateForm';
 import { loadAll } from '../../redux/alarms';
 
@@ -16,7 +16,7 @@ export class Alarms extends Component {
         <h2>Create alarm</h2>
         <AlarmCreateForm />
         <h2>Alarms</h2>
-        { items.map(alarm => <div key={alarm.id}>Take {alarm.dosage} of {alarm.pillName} at {alarm.ingestionTime}</div>)}
+        { items.map(alarm => <Alarm key={alarm.id} alarm={alarm} />)}
       </div>
     );
   }
