@@ -7,12 +7,10 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <Grid>
-    <h2>
-        Create alarm
-    </h2>
     <Row>
         <Col
-            md={6}>
+            md={6}
+            xs={12}>
             <h2>
                 Alarms
             </h2>
@@ -36,19 +34,18 @@ ShallowWrapper {
                 } />
         </Col>
         <Col
-            md={6}>
+            md={6}
+            xs={12}>
             <Connect(ReduxForm) />
         </Col>
     </Row>
 </Grid>,
   "nodes": Array [
     <Grid>
-      <h2>
-            Create alarm
-      </h2>
       <Row>
             <Col
-                  md={6}>
+                  md={6}
+                  xs={12}>
                   <h2>
                         Alarms
                   </h2>
@@ -72,7 +69,8 @@ ShallowWrapper {
                         } />
             </Col>
             <Col
-                  md={6}>
+                  md={6}
+                  xs={12}>
                   <Connect(ReduxForm) />
             </Col>
       </Row>
@@ -138,12 +136,10 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <Grid>
-          <h2>
-                    Create alarm
-          </h2>
           <Row>
                     <Col
-                              md={6}>
+                              md={6}
+                              xs={12}>
                               <h2>
                                         Alarms
                               </h2>
@@ -167,19 +163,18 @@ ShallowWrapper {
                                         } />
                     </Col>
                     <Col
-                              md={6}>
+                              md={6}
+                              xs={12}>
                               <Connect(ReduxForm) />
                     </Col>
           </Row>
 </Grid>,
         "_debugID": 2,
         "_renderedOutput": <Grid>
-          <h2>
-                    Create alarm
-          </h2>
           <Row>
                     <Col
-                              md={6}>
+                              md={6}
+                              xs={12}>
                               <h2>
                                         Alarms
                               </h2>
@@ -203,7 +198,8 @@ ShallowWrapper {
                                         } />
                     </Col>
                     <Col
-                              md={6}>
+                              md={6}
+                              xs={12}>
                               <Connect(ReduxForm) />
                     </Col>
           </Row>
